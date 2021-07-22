@@ -1,8 +1,8 @@
 //create new divs
 function createDiv(elementName,parentId){
-    let div = document.createElement('div')
+    let div = document.createElement('div');
     div.setAttribute("id", elementName);
-    document.getElementById(parentId).appendChild(div)
+    document.getElementById(parentId).appendChild(div);
     }
 
 
@@ -30,11 +30,11 @@ function showSort(){
         if (input === null) {
             return;
         }
-        arr.push(input)
+        arr.push(input);
     }
     createDiv('entered','string');
     createDiv('sorted','string');
     document.getElementById('entered').innerHTML = "Entered Array : ["+arr+"]";
-    document.getElementById('sorted').innerHTML =  "Sorted Array : ["+arr.sort()+"]"
+    document.getElementById('sorted').innerHTML =  "Sorted Array : ["+arr.sort()+"]";
 }
 
