@@ -20,6 +20,13 @@
         float: left;
         border:1px solid black;
     }
+    #xOR{
+        margin-left: .1rem;
+        width: 180px;
+        height: 400px;
+        float: left;
+        border:1px solid black;
+    }
 </style>
 <body>
     <div>
@@ -29,10 +36,17 @@
     <div id="string">
         <button onclick="showSort()" >String Sort</button>
     </div>
+
+
     <div id="time">
     <input type="text" id="secInput" value="129" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" />
     <button onclick="hoursMinsSeconds()" >Show Result</button>
     </div>
+
+    <div id="xOR">
+        <button id="makeInputButton" onclick="makeInputFields()" >Create input Fields</button>
+        <div id="output"></div>
+        </div>
 </body>
 <script src="./index.js"></script>
 </html>
